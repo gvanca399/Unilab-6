@@ -30,7 +30,7 @@ body header .container .inner-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 38px 0;
+    padding: 33px 0;
 }
 body header .container .inner-header nav ul{
     display: flex;
@@ -55,10 +55,10 @@ body header .container .inner-header nav ul .active{
     font-weight: bold;
 }
 
-/* main specials */
+/* main section specials */
 
 body .container .specials-box{
-    margin-top: 300px;
+    margin-top: 250px;
 }
 body .container .specials-box h2{
     font-family: 'Cinzel';
@@ -68,8 +68,160 @@ body .container .specials-box h2{
     line-height: 70px;
     color: #000000;
     text-shadow: 0px 11.5315px 11.5315px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+body .container .specials-box .boxes .box{
+    width: 27%;
+    padding: 15px;
+    border: 1px solid #75464AB2;
+    border-radius: 10px;
+}
+body .container .specials-box .boxes .box h3{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #121111;
+    margin-top: 10px;
+}
+span{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    float: right;
+}
+body .container .specials-box .boxes .box p .new-in-stock{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700; 
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #FF0000;
+    float: left;
+}
+body .container .specials-box .boxes .box p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    color: #121111;
+    margin-bottom: 10px ;
+    text-decoration-line: underline;
+}
+body .container .specials-box .boxes .box button{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 11px 15px;
+    border: none;
+    background: #3F3232;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+body .container .specials-box .view-more{
+    cursor: pointer;
+    width: 230px;
+    height: 60px;
+    background: #3F3232;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    float: right;
+    margin-top: 80px;
 }
 
+/* gallery page */
+
+body main .gallery h2{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 280px;
+    margin-bottom: 100px;
+}
+body main .gallery .gallery-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 112px;
+    justify-items: center;
+}
+body main .gallery .gallery-imgs img{
+    transition: 500ms;
+}
+body main .gallery .gallery-imgs img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+}
+
+/* faq page */
+
+body main .faq-page h2{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin: 260px 0 115px;
+}
+body main .faq-page h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: #121111;
+    margin-top: 120px;
+    padding-bottom: 22px;
+    border-bottom:  1px solid #75464A;
+}
+body main .faq-page p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    margin-top: 45px;
+}
+
+
+/* about us page */
+
+body main .about-page h2{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin: 260px 0 115px;
+}
+body main .about-page .about-box p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+}
 /* footer */
 footer{
     background-color: #F5EFEF;
