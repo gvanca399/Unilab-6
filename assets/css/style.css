@@ -25,16 +25,21 @@ body header{
     width: 100%;
     z-index: 99;
     background-color: #F5EFEF;
+    padding: 33px 0;
 }
 body header .container .inner-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 33px 0;
+}
+body header .container .inner-header nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 body header .container .inner-header nav ul{
     display: flex;
-
+    
 }
 body header .container .inner-header nav ul li{
     margin-right: 48px;
@@ -157,13 +162,18 @@ body main .gallery h2{
     margin-bottom: 100px;
 }
 body main .gallery .gallery-imgs{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 112px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+body main .gallery .gallery-imgs .gallery-item{
+    flex: 3 1 30%; /*grow | shrink | basis */
+    padding: 50px;
 }
 body main .gallery .gallery-imgs img{
-    transition: 500ms;
+    width: 300px;
+    transition: 400ms;
 }
 body main .gallery .gallery-imgs img:hover {
     transform: scale(1.1);
@@ -221,6 +231,86 @@ body main .about-page .about-box p{
     font-size: 18px;
     line-height: 160%;
     color: #000000;
+}
+
+/* contact page */
+body main .container .title{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;    
+    margin: 260px 0 70px;
+}
+main .container .contact-info{
+    text-align: center;
+}
+main .container .contact-info h2{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 15px
+}
+main .container .contact-info p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000; 
+}
+.forms{
+    margin-top: 130px;   
+}
+.flex-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 190px;
+}
+label {
+    display: block;
+    margin:65px 0 15px;
+}
+input[type=text] {
+    width: 390px;
+    height: 40px;
+    border: 1px solid rgba(117, 70, 74, 0.7);
+    border-radius: 10px;
+    font-size: 16px;
+    background-image: url('../assets/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 0 12px 50px;
+    outline: none;
+}
+input[type=email] {
+    width: 390px;
+    height: 40px;
+    border: 1px solid rgba(117, 70, 74, 0.7);
+    border-radius: 10px;
+    font-size: 16px;
+    background-image: url('../assets/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 0 12px 50px;
+    outline: none;
+}
+textarea {
+    padding: 12px;
+    border: 1px solid rgba(117, 70, 74, 0.7);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;}
+iframe {
+    margin:65px 0 15px;
+    align-items: center;
+    justify-content: center;
 }
 /* footer */
 footer{
