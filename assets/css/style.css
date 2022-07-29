@@ -34,7 +34,7 @@ body header .container .inner-header{
 }
 body header .container .inner-header nav ul{
     display: flex;
-    margin-left: 395px;
+
 }
 body header .container .inner-header nav ul li{
     margin-right: 48px;
